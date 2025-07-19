@@ -1,12 +1,93 @@
-# React + Vite
+# 🚀 ProElite Landing Page - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern landing page built using **React + Vite**, featuring smooth **scroll-based animations** using `AOS` and `Framer Motion`, and designed with **Tailwind CSS** for fast UI development.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Features
 
-## Expanding the ESLint configuration
+- ⚡ Vite + React setup for lightning-fast dev experience
+- 🎨 Tailwind CSS for utility-first styling
+- 🧠 Animations using:
+  - `AOS` (Animate On Scroll) for lightweight scroll-in effects
+  - `framer-motion` + `react-intersection-observer` for precise scroll enter/exit control
+- 📱 Responsive layout for all devices
+- ✉️ Working contact form UI
+- 📦 Clean component structure (Hero, About, Features, Contact, Footer, etc.)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **Lucide React Icons**
+- **AOS** for entry animations
+- **Framer Motion** for scroll animations
+- **React Intersection Observer**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/proelite-landing-page.git
+cd proelite-landing-page
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+### 📁 Project Structure
+
+```
+src/
+├── assets/ #images, logos
+├── components/ #Hero, About, Contact, Footer, etc.
+├── App.jsx
+├── main.jsx
+```
+
+### Framer Motion + Intersection Observer
+
+Used for more interactive, scroll-aware animations like fade-up, slide-left, etc.
+
+```
+npm install framer-motion react-intersection-observer
+```
+
+### Reusable animation wrapper example:
+
+```
+<motion.div
+  initial="hidden"
+  animate={inView ? "visible" : "hidden"}
+  variants={...}
+>
+  {/* content */}
+</motion.div>
+```
+
+### 📄 ESLint & Formatting
+
+This template includes ESLint preconfigured for React. To customize or expand rules, refer to `.eslintrc.`
+
+### 📃 License
+
+MIT – free to use, customize, and extend.
+
+### 🙏 Credits
+
+Built with ❤️ using React, Vite, Tailwind, and Framer Motion + Intersection Observer.

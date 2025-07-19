@@ -7,7 +7,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
-
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,7 +24,7 @@ const App = () => {
       <Contact />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;
